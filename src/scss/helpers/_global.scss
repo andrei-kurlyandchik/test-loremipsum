@@ -1,0 +1,233 @@
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  @include font400;
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
+
+.main {
+  flex: 1 0 auto;
+}
+
+img {
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: unset;
+}
+
+.container {
+  width: 1208px;
+  padding: 0 24px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.flex-sb {
+  @include flex-center;
+  justify-content: space-between;
+}
+
+.container--footer {
+  display: grid;
+  grid-template-columns: 30% 1fr 30%;
+  align-items: center;
+  grid-template-areas:"copywriter payments feedback";
+}
+
+.logo-link {
+  width: 247px;
+  display: block;
+}
+
+.m-r-30 {
+  margin-right: 30px;
+}
+
+.col-blue {
+  color: $blue-btn;
+}
+
+.input {
+  width: 100%;
+  height: 48px;
+  @include font400;
+  @include fs-18-lh-22;
+  color: $input-text;
+  background-color: rgba($white, .85);
+  border: 1px solid $white;
+  border-radius: 3px;
+  padding: 10px;
+
+  &::placeholder {
+    color: $input-text;
+  }
+}
+
+.select-wrapper {
+  width: 100%;
+  height: 48px;
+  position: relative;
+  user-select: none;
+
+  &.active {
+    .default_option {
+      background-color: rgba($footer-color, .95);
+      border: 1px solid $footer-color;
+      color: $white;
+
+      &:before {
+        top: 25px;
+        transform: rotate(-225deg);
+        color: $white;
+        border-color: transparent transparent $white $white;
+      }
+
+      li {
+        color: $white;
+      }
+    }
+
+    .select_ul {
+      display: block;
+    }
+  }
+}
+
+.default_option{
+  height: 100%;
+  position: relative;
+  cursor: pointer;
+  background-color: rgba($white, .85);
+  border: 1px solid $white;
+  border-radius: 3px;
+  @include list-reset;
+
+  &:before{
+    content: "";
+    position: absolute;
+    top: 18px;
+    right: 15px;
+    width: 5px;
+    height: 5px;
+    border: 1px solid;
+    border-color: transparent transparent $black $black;
+    transform: rotate(-45deg);
+  }
+
+  li {
+    padding: 10px 30px 10px 10px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    @include font400;
+    font-size: 18px;
+    line-height: 22px;
+    color: $input-text;
+  }
+}
+
+.select_ul{
+  position: absolute;
+  @include list-reset;
+  top: 47px;
+  left: 0;
+  width: 100%;
+  background: rgba($input-text, .95);
+  display: none;
+  border: 1px solid $footer-color;
+  border-radius: 3px;
+  padding: 8px 10px;
+  max-height: 180px;
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  &{
+    scrollbar-width: auto;
+    scrollbar-color: $blue-btn $footer-color;
+  }
+
+  /* Chrome, Edge, and Safari */
+  &::-webkit-scrollbar {
+    width: 7px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background:$footer-color;
+    border-radius: 3px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $blue-btn;
+    border-radius: 3px;
+    border: 0px solid $blue-btn;
+  }
+
+  li {
+    @include font400;
+    font-size: 18px;
+    line-height: 34px;
+    color: $white;
+
+    &:hover {
+      color: $slider-thumb;
+      cursor: pointer;
+    }
+  }
+}
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  @include flex-center-justify;
+  background: #ffffff;
+  z-index: 10;
+
+  img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+#preloader.hide-preloader {
+  animation: hidePreloader 1s;
+}
+
+#preloader.preloader-hidden {
+  display: none;
+}
+
+@keyframes hidePreloader {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

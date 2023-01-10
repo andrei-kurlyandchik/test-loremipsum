@@ -1,0 +1,74 @@
+.header {
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  top: 0;
+  left: 0;
+  background-color: rgba(16, 16, 29, 0.9);
+  @include flex-center-justify;
+  transition: height .1s ease;
+  z-index: 5;
+}
+
+.header--open-menu {
+  background-color: $black;
+}
+
+.menu-mobile-btn {
+  display: none;
+  position: relative;
+}
+
+.btn-menu {
+  position: relative;
+  width: 24px;
+  height: 18px;
+  cursor: pointer
+}
+
+.btn-menu::after,.btn-menu::before {
+  content: '';
+  position: absolute;
+  background-color: #fff;
+  width: 100%;
+  height: 2px;
+  left: 0;
+  transition: .3s ease
+}
+
+.btn-menu::before {
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0
+}
+
+.btn-menu::after {
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0
+}
+
+.btn-menu span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: #fff;
+  width: 100%;
+  height: 2px;
+  transition: .3s ease
+}
+
+.btn-menu.active span {
+  display: none
+}
+
+.btn-menu.active::after,.btn-menu.active::before {
+  bottom: auto;
+  top: 50%;
+  transform: translateX(-50%) rotate(45deg)
+}
+
+.btn-menu.active::after {
+  transform: translateX(-50%) rotate(-45deg)
+}

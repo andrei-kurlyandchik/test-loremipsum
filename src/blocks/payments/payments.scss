@@ -1,0 +1,36 @@
+.types-payments {
+  border-left: 1px solid $gray-footer;
+  display: grid;
+  grid-template-columns: 30% 33% 30%;
+  grid-area: payments;
+}
+
+.types-payments__item {
+  @include flex-center;
+  margin-left: 36px;
+  position: relative;
+  overflow: hidden;
+
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 1px;
+  }
+}
+
+.types-payments__text {
+  @include font400;
+  @include fs-13-lh-16;
+  margin-left: 10px;
+  color: $gray-footer;
+}
+
+.types-payments__icon {
+  width: 20px;
+  height: 20px;
+}
+

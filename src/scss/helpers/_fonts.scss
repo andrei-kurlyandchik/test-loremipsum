@@ -1,0 +1,15 @@
+@font-face {
+  @include includeFont(400, $first-font, "Lato-Regular");
+}
+
+@font-face {
+  @include includeFont(600, $first-font, "Lato-Semibold");
+}
+
+@font-face {
+  @include includeFont(700, $first-font, "Lato-Bold");
+}
+
+@font-face {
+  @include includeFont(800, $first-font, "Lato-Heavy");
+}

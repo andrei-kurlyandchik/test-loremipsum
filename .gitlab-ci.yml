@@ -1,0 +1,16 @@
+image: node:12-buster
+
+pages:
+  stage: deploy
+  before_script:
+    - npm install
+    - npm run build
+  script:
+    - mkdir .public
+    - cp -rp dist/* .public
+    - mv .public public
+  artifacts:
+    paths:
+      - public
+  only:
+    - pages

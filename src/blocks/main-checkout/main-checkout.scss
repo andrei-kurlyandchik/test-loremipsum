@@ -1,0 +1,21 @@
+.main-checkout {
+  width: 100%;
+  position: relative;
+  background-color: $input-text;
+  background-image: url("../img/main-checkout.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 120px 0 145px;
+  overflow: hidden;
+}
+
+.main-checkout__title {
+  @include font800;
+  font-size: 36px;
+  line-height: 43px;
+  color: $white;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+}

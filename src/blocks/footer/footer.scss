@@ -1,0 +1,25 @@
+.footer {
+  flex: 0 0 auto;
+  background-color: $footer-color;
+  min-height: 80px;
+  padding: 20px 0;
+  display: flex;
+}
+
+.copywriter {
+  @include font400;
+  @include fs-13-lh-16;
+  color: $white;
+  grid-area: copywriter;
+}
+
+.copywriter--upper {
+  text-transform: uppercase;
+}
+
+
+
+
+
+
+
