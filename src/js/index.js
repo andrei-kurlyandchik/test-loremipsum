@@ -1,5 +1,5 @@
 import $ from 'jquery';
-import {TweenMax} from "../vendor/gsap/gsap.min";
+import {TweenMax} from "gsap/all";
 
 
 // Mobile menu
@@ -128,7 +128,6 @@ window.onload = function () {
     });
   });
   // End Text animation init
-
 
   // AOS
   // eslint-disable-next-line no-undef

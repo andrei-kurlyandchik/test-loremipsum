@@ -70,6 +70,8 @@
     "src/blocks/**/*.scss"
   ],
   "dependencies": {
+    "aos": "^2.3.4",
+    "gsap": "^3.11.4",
     "jquery": "^3.6.3"
   }
 }

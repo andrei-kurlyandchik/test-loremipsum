@@ -6,12 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML</title>
   @@include('../blocks/favicon/favicon.html')
-  <link rel="stylesheet" href="vendor/aos/aos.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body ontouchstart>
 <div id='preloader'>
-  <img src="img/preloader.gif" alt="preloader">
+  <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
 </div>
 @@include('../blocks/header/header.html')
 <main class="main">
@@ -22,8 +22,7 @@
 <div class="menu menu--mobile">
 @@include('../blocks/menu/menu.html')
 </div>
-<script src="vendor/aos/aos.min.js"></script>
-<script src="vendor/gsap/gsap.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="js/bundle.js"></script>
 </body>
 </html>
