@@ -97,8 +97,12 @@ $(`.select_ul li`).click(function () {
 
 // device check
 const devices = new RegExp(`Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini`, `i`);
+const expression = /(iPhone|iPod|iPad)/i;
 
 if (devices.test(navigator.userAgent)) {
+  $(`.desktop-device`).hide();
+  $(`.mobile-device`).show();
+} else if (expression.test(navigator.platform)) {
   $(`.desktop-device`).hide();
   $(`.mobile-device`).show();
 } else {
