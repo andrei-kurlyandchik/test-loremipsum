@@ -347,6 +347,7 @@ a {
   @include fs-13-lh-16;
   margin-left: 10px;
   color: $gray-footer;
+  flex: 0 0 auto;
 }
 
 .icon-text-block__icon {
