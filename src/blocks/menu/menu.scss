@@ -5,7 +5,11 @@
 }
 
 .menu__item {
-  margin-left: 60px;
+  margin-right: 60px;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .menu__link {
@@ -39,7 +43,7 @@
   }
 }
 
-.menu__link--active {
+.menu__link_active{
   color: $blue;
 }
 
@@ -62,7 +66,7 @@
   }
 
   .menu__item {
-    margin-left: 0;
+    margin-right: 0;
   }
 
   .menu__link {

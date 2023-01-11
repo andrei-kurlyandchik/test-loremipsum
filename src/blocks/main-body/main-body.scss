@@ -5,13 +5,16 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("../img/main.jpg");
   overflow: hidden;
 
   .container {
     padding-top: 130px;
     padding-bottom: 30px;
   }
+}
+
+.main-body_bg_img {
+  background-image: url("../img/main.jpg");
 }
 
 .main-body__title {
@@ -30,109 +33,22 @@
   }
 }
 
-.main-body__description {
+.main-body__description-box {
   width: 768px;
   margin-bottom: 80px;
 }
 
-.main-body__list-title {
+.main-body__description-text {
   @include font700;
   @include fs-20-lh-24;
   color: black;
   margin-bottom: 10px;
 }
 
-.main-body__list {
-  @include list-reset;
-}
-
-.main-body__item {
-  @include font400;
-  @include fs-20-lh-24;
-  margin-bottom: 5px;
-  margin-left: 10px;
-  padding-left: 15px;
-  position: relative;
-
-  &:before {
-    content: " ";
-    position: absolute;
-    left: 0;
-    top: 12px;
-    width: 5px;
-    height: 1.5px;
-    background-color: $black;
-  }
-}
-
 .main-body__link-block {
   @include flex-center;
 }
 
-.link-blue-btn {
-  @include flex-center-justify;
+.main-body__link {
   width: 183px;
-  height: 43px;
-  border: 1px solid $white;
-  background-color: $blue-btn;
-  border-radius: 4px;
-  @include font400;
-  @include fs-13-lh-16;
-  text-transform: uppercase;
-  color: $white;
-
-  &:hover {
-    animation: shake 0.5s;
-    animation-iteration-count: infinite;
-  }
-}
-
-.link-white-btn {
-  @include flex-center-justify;
-  width: 183px;
-  height: 43px;
-  border: 1px solid $border-btn;
-  background-color: $white;
-  border-radius: 4px;
-  @include font400;
-  @include fs-13-lh-16;
-  text-transform: uppercase;
-  color: $gray;
-  transition: ease-out 0.5s;
-  position: relative;
-
-  &:after, &:before {
-    position: absolute;
-    content: "";
-    width: 0;
-    height: 0;
-    transition: .5s;
-    border-radius: 4px;
-  }
-
-  &:after {
-    top: -1px;
-    left: -1px;
-    border-top: 2px solid transparent;
-    border-left: 2px solid transparent;
-  }
-
-  &:before {
-    bottom: -1px;
-    right: -1px;
-    border-bottom: 2px solid transparent;
-    border-right: 2px solid transparent;
-  }
-
-  &:hover {
-    animation: pulse 1s ease-out .4s;
-    color: $white;
-    background-color: $blue-btn;
-
-    &:after, &:before {
-      width: 100%;
-      height: 100%;
-      border-color: #222222;
-    }
-  }
 }

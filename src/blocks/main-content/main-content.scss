@@ -1,0 +1,19 @@
+.main-content {
+  width: 100%;
+  position: relative;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 120px 0 145px;
+  overflow: hidden;
+}
+
+.main-content_bg_img {
+  background-color: $input-text;
+  background-image: url("../img/main-checkout.png");
+}
+
+.main-content__title {
+  text-align: center;
+  margin-bottom: 30px;
+}

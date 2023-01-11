@@ -1,27 +1,29 @@
 .feedback {
-  border-left: 1px solid $gray-footer;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-area: feedback;
 }
 
-.feedback__link {
-  @include flex-center;
+.feedback_col {
   margin-left: 38px;
+}
+
+.link-icon-text {
+  @include flex-center;
 
   &:hover {
-    .feedback__icon {
+    .link-icon-text__icon {
       animation: shake 0.5s;
       animation-iteration-count: infinite;
     }
 
-    .feedback__text:before {
+    .link-icon-text__text:before {
       transform: translateX(0);
     }
   }
 }
 
-.feedback__icon {
+.link-icon-text__icon {
   width: 20px;
   height: 20px;
 }
@@ -40,7 +42,7 @@
   100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
-.feedback__text {
+.link-icon-text__text {
   @include font400;
   @include fs-13-lh-16;
   color: $white;

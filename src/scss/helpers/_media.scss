@@ -14,12 +14,12 @@
     text-align: center;
   }
 
-  .types-payments__item, .feedback__link {
+  .types-payments__item, .feedback_col {
     margin-left: 22px;
     margin-bottom: 20px;
   }
 
-  .types-payments, .feedback {
+  .types-payments.footer_border_left, .feedback.footer_border_left {
     border-left: none;
   }
 
@@ -31,7 +31,7 @@
     grid-template-columns: 1fr 1fr
   }
 
-  .main-scheme-work-list {
+  .main-scheme-work__row {
     &>div:nth-child(10n+1) {
       display: block;
     }
@@ -45,7 +45,7 @@
     }
   }
 
-  .main-scheme-work-list__item {
+  .main-scheme-work__column {
     width: 33%;
   }
 }
@@ -86,11 +86,11 @@
     margin-bottom: 48px;
   }
 
-  .main-body__description {
+  .main-body__description-box {
     margin-bottom: 48px;
   }
 
-  .main-body__list-title, .main-body__item {
+  .main-body__description-text, .main-body__item {
     font-size: 16px;
     line-height: 20px;
   }
@@ -106,7 +106,7 @@
     background-position: left;
   }
 
-  .main-body__title, .main-body__description {
+  .main-body__title, .main-body__description-box {
     width: 100%;
   }
 
@@ -122,12 +122,12 @@
     grid-template-columns: 100%;
   }
 
-  .types-payments__item, .feedback__link {
+  .types-payments__item, .feedback_col {
     margin-left: 0;
     justify-content: center;
   }
 
-  .main-checkout {
+  .main-content {
     padding: 80px 0;
   }
 
@@ -151,7 +151,7 @@
     min-width: auto;
   }
 
-  .main-scheme-work-list {
+  .main-scheme-work__row {
     &>div:nth-child(10n+1) {
       display: block;
     }
@@ -169,7 +169,7 @@
     }
   }
 
-  .main-scheme-work-list__item {
+  .main-scheme-work__column {
     width: 50%;
   }
 }
@@ -179,7 +179,7 @@
     grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
   }
 
-  .main-scheme-work-list {
+  .main-scheme-work__row {
     &>div:nth-child(10n+1) {
       display: block;
     }
@@ -201,7 +201,7 @@
     }
   }
 
-  .main-scheme-work-list__item {
+  .main-scheme-work__column {
     width: 100%;
   }
 }

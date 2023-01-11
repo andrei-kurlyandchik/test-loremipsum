@@ -22,7 +22,7 @@
 <meta name="msapplication-TileImage" content="img/favicons//mstile-144x144.png">
 <meta name="theme-color" content="#ffffff">
 
-  <link rel="stylesheet" href="css/main.min.css">
+  <link rel="stylesheet" href="css/main.css">
 </head>
 <body ontouchstart>
 <div id='preloader'>
@@ -36,7 +36,7 @@
     <div class="menu menu_desktop">
       <ul class="menu__list">
   <li class="menu__item">
-    <a href="#" class="menu__link menu__link--active">Бизнес</a>
+    <a href="#" class="menu__link menu__link_active">Бизнес</a>
   </li>
   <li class="menu__item">
     <a href="#" class="menu__link">О нас</a>
@@ -59,35 +59,35 @@
 </header>
 
 <main class="main">
-  <div class="main-body" id="parallax">
+  <div class="main-body main-body_bg_img" id="parallax">
   <div class="container">
     <div class="main-body__title">
       <span class="col-blue" id="animation-text-1">Lorem ipsum</span> dolor sit ametconsectetur <span class="col-blue" id="animation-text-2">adipiscing</span>
     </div>
-    <div class="main-body__description">
-      <div class="main-body__list-title">
+    <div class="main-body__description-box">
+      <div class="main-body__description-text">
         At vero eos et accusamus et iusto odio dignissimos ducimus!
       </div>
-      <ul class="main-body__list">
-        <li class="main-body__item" data-aos="fade-up" data-aos-duration="1500">Totam rem aperiam eaque ipsa</li>
-        <li class="main-body__item" data-aos="fade-up" data-aos-duration="1800">Sit voluptatem accusantium doloremque laudantium</li>
-        <li class="main-body__item" data-aos="fade-up" data-aos-duration="2100">Sed ut perspiciatis, unde omnis iste natus error</li>
+      <ul class="list-items">
+        <li class="list-items__item" data-aos="fade-up" data-aos-duration="1500">Totam rem aperiam eaque ipsa</li>
+        <li class="list-items__item" data-aos="fade-up" data-aos-duration="1800">Sit voluptatem accusantium doloremque laudantium</li>
+        <li class="list-items__item" data-aos="fade-up" data-aos-duration="2100">Sed ut perspiciatis, unde omnis iste natus error</li>
       </ul>
     </div>
     <div class="main-body__link-block">
-      <a href="#element1" class="link-blue-btn m-r-30 scroll-to">заказать</a>
-      <a href="#" class="link-white-btn scroll-to">подробнее</a>
+      <a href="#element1" class="link-blue-btn m-r-30 main-body__link">заказать</a>
+      <a href="#" class="link-white-btn scroll-to main-body__link">подробнее</a>
     </div>
   </div>
 </div>
 
-  <div class="main-checkout" id="element1">
+  <div class="main-content main-content_bg_img" id="element1">
   <div class="container">
-    <div class="main-checkout__title" data-aos="fade-right">Оформление <span class="col-blue">Заказа</span></div>
+    <div class="main-content__title title" data-aos="fade-right">Оформление <span class="col-blue">Заказа</span></div>
     <div class="main-scheme-work">
-  <div class="main-scheme-work__title" data-aos="fade-left">Перед заполнением формы ознакомьтесь с нашей схемой работы!</div>
-  <div class="main-scheme-work-list">
-    <div class="main-scheme-work-list__separator" data-aos="zoom-in">
+  <div class="main-scheme-work__title desc-text" data-aos="fade-left">Перед заполнением формы ознакомьтесь с нашей схемой работы!</div>
+  <div class="main-scheme-work__row">
+    <div class="main-scheme-work__separator" data-aos="zoom-in">
       <div class="separator">
         <span></span>
         <span></span>
@@ -96,17 +96,19 @@
         <span></span>
       </div>
     </div>
-    <div class="main-scheme-work-list__item">
-      <div class="main-scheme-work-list__icon-block" data-aos="flip-left">
-        <div class="main-scheme-work-list__icon">
-          <img src="img/icons/svg/icon-search.svg" alt="search">
+    <div class="main-scheme-work__column">
+      <div class="main-scheme-work-item">
+        <div class="main-scheme-work-item__icon-block" data-aos="flip-left">
+          <div class="main-scheme-work-item__icon">
+            <img src="img/icons/svg/icon-search.svg" alt="search">
+          </div>
+        </div>
+        <div class="main-scheme-work-item__title">
+          Lorem ipsum dolorsit amet
         </div>
       </div>
-      <div class="main-scheme-work-list__title">
-        Lorem ipsum dolorsit amet
-      </div>
     </div>
-    <div class="main-scheme-work-list__separator" data-aos="zoom-in">
+    <div class="main-scheme-work__separator" data-aos="zoom-in">
       <div class="separator">
         <span></span>
         <span></span>
@@ -115,17 +117,19 @@
         <span></span>
       </div>
     </div>
-    <div class="main-scheme-work-list__item">
-      <div class="main-scheme-work-list__icon-block" data-aos="flip-left">
-        <div class="main-scheme-work-list__icon">
-          <img src="img/icons/svg/icon-percent.svg" alt="percent">
+    <div class="main-scheme-work__column">
+      <div class="main-scheme-work-item">
+        <div class="main-scheme-work-item__icon-block" data-aos="flip-left">
+          <div class="main-scheme-work-item__icon">
+            <img src="img/icons/svg/icon-percent.svg" alt="search">
+          </div>
+        </div>
+        <div class="main-scheme-work-item__title">
+          Сonsecteturadipiscing elit
         </div>
       </div>
-      <div class="main-scheme-work-list__title">
-        Сonsecteturadipiscing elit
-      </div>
     </div>
-    <div class="main-scheme-work-list__separator" data-aos="zoom-in">
+    <div class="main-scheme-work__separator" data-aos="zoom-in">
       <div class="separator">
         <span></span>
         <span></span>
@@ -134,17 +138,19 @@
         <span></span>
       </div>
     </div>
-    <div class="main-scheme-work-list__item">
-      <div class="main-scheme-work-list__icon-block" data-aos="flip-left">
-        <div class="main-scheme-work-list__icon">
-          <img src="img/icons/svg/icon-doc.svg" alt="doc">
+    <div class="main-scheme-work__column">
+      <div class="main-scheme-work-item">
+        <div class="main-scheme-work-item__icon-block" data-aos="flip-left">
+          <div class="main-scheme-work-item__icon">
+            <img src="img/icons/svg/icon-doc.svg" alt="search">
+          </div>
+        </div>
+        <div class="main-scheme-work-item__title">
+          Sed do eiusmod tempor
         </div>
       </div>
-      <div class="main-scheme-work-list__title">
-        Sed do eiusmod tempor
-      </div>
     </div>
-    <div class="main-scheme-work-list__separator" data-aos="zoom-in">
+    <div class="main-scheme-work__separator" data-aos="zoom-in">
       <div class="separator">
         <span></span>
         <span></span>
@@ -153,17 +159,19 @@
         <span></span>
       </div>
     </div>
-    <div class="main-scheme-work-list__item">
-      <div class="main-scheme-work-list__icon-block" data-aos="flip-left">
-        <div class="main-scheme-work-list__icon">
-          <img src="img/icons/svg/icon-mail.svg" alt="mail">
+    <div class="main-scheme-work__column">
+      <div class="main-scheme-work-item">
+        <div class="main-scheme-work-item__icon-block" data-aos="flip-left">
+          <div class="main-scheme-work-item__icon">
+            <img src="img/icons/svg/icon-mail.svg" alt="search">
+          </div>
+        </div>
+        <div class="main-scheme-work-item__title">
+          Esse cillum doloreeu fugiat
         </div>
       </div>
-      <div class="main-scheme-work-list__title">
-        Esse cillum doloreeu fugiat
-      </div>
     </div>
-    <div class="main-scheme-work-list__separator" data-aos="zoom-in">
+    <div class="main-scheme-work__separator" data-aos="zoom-in">
       <div class="separator">
         <span></span>
         <span></span>
@@ -172,17 +180,18 @@
         <span></span>
       </div>
     </div>
-    <div class="main-scheme-work-list__item">
-      <div class="main-scheme-work-list__icon-block" data-aos="flip-left">
-        <div class="main-scheme-work-list__icon">
-          <img src="img/icons/svg/icon-dol.svg" alt="dol">
+    <div class="main-scheme-work__column">
+      <div class="main-scheme-work-item">
+        <div class="main-scheme-work-item__icon-block" data-aos="flip-left">
+          <div class="main-scheme-work-item__icon">
+            <img src="img/icons/svg/icon-dol.svg" alt="search">
+          </div>
+        </div>
+        <div class="main-scheme-work-item__title">
+          Excepteur sint occaecat cupidatat non proident
         </div>
       </div>
-      <div class="main-scheme-work-list__title">
-        Excepteur sint occaecat cupidatat non proident
-      </div>
     </div>
-
   </div>
 </div>
 
@@ -276,7 +285,7 @@
       </div>
     </div>
   </div>
-  <button type="submit" class="btn-submit" data-aos="flip-right">Отправить</button>
+  <button type="submit" class="btn-submit btn-submit_form" data-aos="flip-right">Отправить</button>
 </form>
 
   </div>
@@ -285,41 +294,62 @@
 </main>
 <footer class="footer">
   <div class="container container_footer_grid">
-    <div class="footer__copywriter">© 2018 <span class="uppercase-text">«LoremIpsum.net»</span> Все права защищены</div>
-    <div class="types-payments">
-  <div class="types-payments__item">
-    <div class="types-payments__icon">
-      <img src="img/icons/svg/icon-qiwi.svg" alt="Qiwi">
+    <div class="footer__copywriter">
+      <div class="copywriter">
+        © 2018 <span class="uppercase-text">«LoremIpsum.net»</span> Все права защищены
+      </div>
     </div>
-    <div class="types-payments__text">QIWI wallet</div>
+    <div class="types-payments footer_border_left">
+  <div class="types-payments__item">
+    <div class="icon-text-block">
+      <div class="icon-text-block__icon">
+        <img src="img/icons/svg/icon-qiwi.svg" alt="Qiwi">
+      </div>
+      <div class="icon-text-block__text">QIWI wallet</div>
+    </div>
   </div>
   <div class="types-payments__item">
-    <div class="types-payments__icon">
-      <img src="img/icons/svg/icon-ymoney.svg" alt="Yandex Money">
+    <div class="icon-text-block">
+      <div class="icon-text-block__icon">
+        <img src="img/icons/svg/icon-ymoney.svg" alt="Yandex Money">
+      </div>
+      <div class="icon-text-block__text">Yandex Money</div>
     </div>
-    <div class="types-payments__text">Yandex Money</div>
   </div>
   <div class="types-payments__item">
-    <div class="types-payments__icon">
-      <img src="img/icons/svg/icon-web-money.svg" alt="Web money">
+    <div class="icon-text-block">
+      <div class="icon-text-block__icon">
+        <img src="img/icons/svg/icon-web-money.svg" alt="Web money">
+      </div>
+      <div class="icon-text-block__text">Web Money</div>
     </div>
-    <div class="types-payments__text">Web Money</div>
   </div>
 </div>
 
-    <div class="feedback">
-  <a href="mailto:info@ipsum228.com" class="feedback__link">
-    <div class="feedback__icon">
-      <img src="img/icons/svg/icon-small-mail.svg" alt="mail">
-    </div>
-    <div class="feedback__text">info@ipsum228.com</div>
-  </a>
-  <a href="#" class="feedback__link">
-    <div class="feedback__icon">
-      <img src="img/icons/svg/icon-vk.svg" alt="vk">
-    </div>
-    <div class="feedback__text">Мы вконтакте</div>
-  </a>
+    <div class="feedback footer_border_left">
+  <div class="feedback_col">
+    <a href="mailto:info@ipsum228.com" class="link-icon-text">
+      <div class="link-icon-text__icon">
+        <img src="img/icons/svg/icon-small-mail.svg" alt="mail">
+      </div>
+      <div class="link-icon-text__text">info@ipsum228.com</div>
+    </a>
+  </div>
+  <div class="feedback_col">
+    <a href="#" class="link-icon-text">
+      <div class="link-icon-text__icon">
+        <img src="img/icons/svg/icon-vk.svg" alt="vk">
+      </div>
+      <div class="link-icon-text__text">Мы вконтакте</div>
+    </a>
+  </div>
+
+<!--  <a href="#" class="feedback__link">-->
+<!--    <div class="feedback__icon">-->
+<!--      <img src="img/icons/svg/icon-vk.svg" alt="vk">-->
+<!--    </div>-->
+<!--    <div class="feedback__text">Мы вконтакте</div>-->
+<!--  </a>-->
 </div>
 
   </div>
@@ -328,7 +358,7 @@
 <div class="menu menu__mobile">
 <ul class="menu__list">
   <li class="menu__item">
-    <a href="#" class="menu__link menu__link--active">Бизнес</a>
+    <a href="#" class="menu__link menu__link_active">Бизнес</a>
   </li>
   <li class="menu__item">
     <a href="#" class="menu__link">О нас</a>
@@ -342,6 +372,6 @@
 </ul>
 
 </div>
-<script src="js/bundle.min.js"></script>
+<script src="js/bundle.js"></script>
 </body>
 </html>
