@@ -102,12 +102,18 @@ const expression = /(iPhone|iPod|iPad)/i;
 if (devices.test(navigator.userAgent)) {
   $(`.desktop-device`).hide();
   $(`.mobile-device`).show();
+  // eslint-disable-next-line no-console
+  console.log(`Мобиле`);
 } else if (expression.test(navigator.platform)) {
   $(`.desktop-device`).hide();
   $(`.mobile-device`).show();
+  // eslint-disable-next-line no-console
+  console.log(`мобиле`);
 } else {
   $(`.desktop-device`).show();
   $(`.mobile-device`).hide();
+  // eslint-disable-next-line no-console
+  console.log(`Декстоп`);
 }
 //
 
