@@ -97,14 +97,15 @@ $(`.select_ul li`).click(function () {
 
 // device check
 const devices = new RegExp(`Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini`, `i`);
-const expression = /(iPhone|iPod|iPad)/i;
+const ios = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+
 
 if (devices.test(navigator.userAgent)) {
   $(`.desktop-device`).hide();
   $(`.mobile-device`).show();
   // eslint-disable-next-line no-console
   console.log(`Мобиле`);
-} else if (expression.test(navigator.platform)) {
+} else if (ios) {
   $(`.desktop-device`).hide();
   $(`.mobile-device`).show();
   // eslint-disable-next-line no-console
