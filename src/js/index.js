@@ -1,6 +1,6 @@
 import $ from 'jquery';
 import {TweenMax} from "gsap/all";
-
+import AOS from "aos";
 
 // Mobile menu
 $(`.btn-menu`).on(`click`, function () {
