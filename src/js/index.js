@@ -110,6 +110,12 @@ if (devices.test(navigator.userAgent)) {
   $(`.mobile-device`).show();
   // eslint-disable-next-line no-console
   console.log(`мобиле`);
+} else if ((navigator.userAgent.toLowerCase().match(`ipad`)) ||
+  (!(navigator.userAgent.toLowerCase().match(`iphone`)) && navigator.maxTouchPoints > 1)) {
+  $(`.desktop-device`).hide();
+  $(`.mobile-device`).show();
+  // eslint-disable-next-line no-console
+  console.log(`мобиле`);
 } else {
   $(`.desktop-device`).show();
   $(`.mobile-device`).hide();
