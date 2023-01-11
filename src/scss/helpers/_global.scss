@@ -50,19 +50,19 @@ a {
   position: relative;
 }
 
-.flex-sb {
+.container_flex_center {
   @include flex-center;
   justify-content: space-between;
 }
 
-.container--footer {
+.container_footer_grid {
   display: grid;
   grid-template-columns: 30% 1fr 30%;
   align-items: center;
   grid-template-areas:"copywriter payments feedback";
 }
 
-.logo-link {
+.logo {
   width: 247px;
   display: block;
 }
@@ -314,4 +314,8 @@ a {
   100% {
     opacity: 0;
   }
+}
+
+.uppercase-text {
+  text-transform: uppercase;
 }

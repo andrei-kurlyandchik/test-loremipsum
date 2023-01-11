@@ -43,7 +43,7 @@
   color: $blue;
 }
 
-.menu--mobile {
+.menu__mobile {
   position: fixed;
   width: 100%;
   top: 65px;
@@ -69,6 +69,7 @@
     display: block;
   }
 }
-.menu-mobile--open {
+
+.menu__mobile_open {
   transform: translateX(0%);
 }

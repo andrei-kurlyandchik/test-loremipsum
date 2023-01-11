@@ -1,4 +1,4 @@
-.scheme-work__title {
+.main-scheme-work__title {
   @include font400;
   @include fs-18-lh-22;
   color: $gray-text;
@@ -6,7 +6,7 @@
   text-align: center;
 }
 
-.scheme-work-list {
+.main-scheme-work-list {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -22,12 +22,12 @@
   }
 }
 
-.scheme-work-list__item {
+.main-scheme-work-list__item {
   width: 20%;
   margin-bottom: 40px;
 }
 
-.scheme-work-list__icon-block {
+.main-scheme-work-list__icon-block {
   width: 100px;
   height: 100px;
   background-color: $blue-btn;
@@ -38,7 +38,7 @@
   position: relative;
 }
 
-.scheme-work-list__separator {
+.main-scheme-work-list__separator {
   position: relative;
   .separator {
     position: absolute;
@@ -57,13 +57,13 @@
   }
 }
 
-.scheme-work-list__icon {
+.main-scheme-work-list__icon {
   width: 55px;
   height: 55px;
   @include flex-center-justify;
 }
 
-.scheme-work-list__title {
+.main-scheme-work-list__title {
   @include font400;
   font-size: 16px;
   line-height: 19px;

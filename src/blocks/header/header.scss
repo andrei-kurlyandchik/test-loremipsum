@@ -10,23 +10,23 @@
   z-index: 5;
 }
 
-.header--open-menu {
+.header_color_black {
   background-color: $black;
 }
 
-.menu-mobile-btn {
+.header__toggle {
   display: none;
   position: relative;
 }
 
-.btn-menu {
+.header__toggle-btn {
   position: relative;
   width: 24px;
   height: 18px;
   cursor: pointer
 }
 
-.btn-menu::after,.btn-menu::before {
+.header__toggle-btn::after,.header__toggle-btn::before {
   content: '';
   position: absolute;
   background-color: #fff;
@@ -36,19 +36,19 @@
   transition: .3s ease
 }
 
-.btn-menu::before {
+.header__toggle-btn::before {
   left: 50%;
   transform: translateX(-50%);
   top: 0
 }
 
-.btn-menu::after {
+.header__toggle-btn::after {
   left: 50%;
   transform: translateX(-50%);
   bottom: 0
 }
 
-.btn-menu span {
+.header__toggle-btn span {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -59,16 +59,16 @@
   transition: .3s ease
 }
 
-.btn-menu.active span {
+.header__toggle-btn.active span {
   display: none
 }
 
-.btn-menu.active::after,.btn-menu.active::before {
+.header__toggle-btn.active::after,.header__toggle-btn.active::before {
   bottom: auto;
   top: 50%;
   transform: translateX(-50%) rotate(45deg)
 }
 
-.btn-menu.active::after {
+.header__toggle-btn.active::after {
   transform: translateX(-50%) rotate(-45deg)
 }

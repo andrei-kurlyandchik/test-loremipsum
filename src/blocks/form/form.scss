@@ -1,23 +1,19 @@
-.form {
-
-}
-
-.form-wrapper {
+.main-form-wrapper {
   display: flex;
   flex-flow: column;
   margin-bottom: 20px;
 }
 
-.form-range-file {
+.main-form-range-file {
   @include flex-center;
   margin-bottom: 30px;
 }
 
-.form-range {
+.main-form-range {
   flex: 1;
 }
 
-.form-range__content {
+.main-form-range__content {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -27,17 +23,17 @@
   margin-bottom: 11px;
 }
 
-.form-range__text {
+.main-form-range__text {
   margin-right: 10px;
 }
 
-.form-range__value {
+.main-form-range__value {
   &>* {
     margin: 0 3px;
   }
 }
 
-.form-range__range {
+.main-form-range__range {
   width: 100%;
   appearance: none;
   height: 6px;
@@ -97,7 +93,7 @@
 
 }
 
-.form-file {
+.main-form-file {
   min-width: 367px;
   position: relative;
   text-align: center;
@@ -106,13 +102,13 @@
   overflow: hidden;
 }
 
-.form-file__input {
+.main-form-file__input {
   opacity: 0;
   visibility: hidden;
   position: absolute;
 }
 
-.form-file__button {
+.main-form-file__button {
   width: 100%;
   height: 48px;
   background: $white;
@@ -133,7 +129,7 @@
   }
 }
 
-.form-file__icon-wrapper {
+.main-form-file__icon-wrapper {
   width: 18px;
   margin-right: 10px;
 }
@@ -190,7 +186,7 @@
   }
 }
 
-.form-input-wrapper {
+.main-form-input-wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
   grid-gap: 30px;

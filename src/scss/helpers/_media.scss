@@ -3,14 +3,14 @@
     width: 100%;
   }
 
-  .container--footer {
+  .container_footer_grid {
     grid-template-columns: 50%;
     grid-template-areas:
       "payments payments feedback"
       "copywriter copywriter copywriter";
   }
 
-  .copywriter {
+  .footer__copywriter {
     text-align: center;
   }
 
@@ -31,7 +31,7 @@
     grid-template-columns: 1fr 1fr
   }
 
-  .scheme-work-list {
+  .main-scheme-work-list {
     &>div:nth-child(10n+1) {
       display: block;
     }
@@ -45,7 +45,7 @@
     }
   }
 
-  .scheme-work-list__item {
+  .main-scheme-work-list__item {
     width: 33%;
   }
 }
@@ -62,15 +62,15 @@
     height: 65px;
   }
 
-  .logo-link {
+  .logo {
     width: 190px;
   }
 
-  .menu-mobile-btn {
+  .header__toggle {
     display: block;
   }
 
-  .menu--desktop {
+  .menu_desktop {
     display: none;
   }
 
@@ -95,7 +95,7 @@
     line-height: 20px;
   }
 
-  .form-input-wrapper {
+  .main-form-input-wrapper {
     grid-template-columns: repeat(auto-fill, minmax(47%, 1fr));
   }
 }
@@ -110,7 +110,7 @@
     width: 100%;
   }
 
-  .container--footer {
+  .container_footer_grid {
     grid-template-columns: 100%;
     grid-template-areas:
         "payments payments payments"
@@ -131,16 +131,16 @@
     padding: 80px 0;
   }
 
-  .form-range-file {
+  .main-form-range-file {
     flex-flow: column;
   }
 
-  .form-range {
+  .main-form-range {
     width: 100%;
     margin-bottom: 30px;
   }
 
-  .form-file {
+  .main-form-file {
     width: 100%;
     margin: 0;
     min-width: auto;
@@ -151,7 +151,7 @@
     min-width: auto;
   }
 
-  .scheme-work-list {
+  .main-scheme-work-list {
     &>div:nth-child(10n+1) {
       display: block;
     }
@@ -169,17 +169,17 @@
     }
   }
 
-  .scheme-work-list__item {
+  .main-scheme-work-list__item {
     width: 50%;
   }
 }
 
 @media only screen and (max-width: 576px) {
-  .form-input-wrapper {
+  .main-form-input-wrapper {
     grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
   }
 
-  .scheme-work-list {
+  .main-scheme-work-list {
     &>div:nth-child(10n+1) {
       display: block;
     }
@@ -201,7 +201,7 @@
     }
   }
 
-  .scheme-work-list__item {
+  .main-scheme-work-list__item {
     width: 100%;
   }
 }

@@ -3,12 +3,12 @@ import {TweenMax} from "gsap/all";
 import AOS from "aos";
 
 // Mobile menu
-$(`.btn-menu`).on(`click`, function () {
+$(`.header__toggle-btn`).on(`click`, function () {
   // eslint-disable-next-line no-invalid-this
   $(this).toggleClass(`active`);
   $(`html`).toggleClass(`overflow-h`);
-  $(`.menu--mobile`).toggleClass(`menu-mobile--open`);
-  $(`.header`).toggleClass(`header--open-menu`);
+  $(`.menu__mobile`).toggleClass(`menu__mobile_open`);
+  $(`.header`).toggleClass(`header_color_black`);
 });
 // End Mobile menu
 
