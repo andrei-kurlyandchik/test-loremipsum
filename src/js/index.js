@@ -13,14 +13,14 @@ $(`.header__toggle-btn`).on(`click`, function () {
 // End Mobile menu
 
 
-// Parallax
-const parallax = document.getElementById(`parallax`);
-
-window.addEventListener(`scroll`, function () {
-  let offset = window.pageYOffset;
-  parallax.style.backgroundPositionY = offset * 0.7 + `px`;
-});
-// End Parallax
+// // Parallax
+// const parallax = document.getElementById(`parallax`);
+//
+// window.addEventListener(`scroll`, function () {
+//   let offset = window.pageYOffset;
+//   parallax.style.backgroundPositionY = offset * 0.7 + `px`;
+// });
+// // End Parallax
 
 
 // Text animation
@@ -94,6 +94,18 @@ $(`.select_ul li`).click(function () {
   $(this).parents(`.select-wrapper`).removeClass(`active`);
 });
 // End Select
+
+// device check
+const devices = new RegExp(`Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini`, `i`);
+
+if (devices.test(navigator.userAgent)) {
+  $(`.desktop-device`).hide();
+  $(`.mobile-device`).show();
+} else {
+  $(`.desktop-device`).show();
+  $(`.mobile-device`).hide();
+}
+//
 
 // Preloader
 window.onload = function () {

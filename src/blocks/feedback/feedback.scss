@@ -9,7 +9,7 @@
 }
 
 .link-icon-text {
-  @include flex-center;
+  @include flex-center-justify;
 
   &:hover {
     .link-icon-text__icon {

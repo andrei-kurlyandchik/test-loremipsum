@@ -22,7 +22,7 @@
 <meta name="msapplication-TileImage" content="img/favicons//mstile-144x144.png">
 <meta name="theme-color" content="#ffffff">
 
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/main.min.css">
 </head>
 <body ontouchstart>
 <div id='preloader'>
@@ -59,7 +59,7 @@
 </header>
 
 <main class="main">
-  <div class="main-body main-body_bg_img" id="parallax">
+  <div class="main-body parallax">
   <div class="container">
     <div class="main-body__title">
       <span class="col-blue" id="animation-text-1">Lorem ipsum</span> dolor sit ametconsectetur <span class="col-blue" id="animation-text-2">adipiscing</span>
@@ -199,7 +199,7 @@
   <div class="main-form-wrapper">
     <div class="main-form-input-wrapper">
       <div class="main-form-input-box">
-        <div class="select-wrapper">
+        <div class="select-wrapper desktop-device">
           <ul class="default_option">
             <li>
               <div class="option">
@@ -259,6 +259,17 @@
               </div>
             </li>
           </ul>
+        </div>
+        <div class="select-wrapper mobile-device">
+          <div class="mobile-select">
+            <select class="mobile-select__select">
+              <option value="" disabled selected>Выберите тип системы</option>
+              <option value="Sed ut perspiciatis">Sed ut perspiciatis</option>
+              <option value="Et harum quidem">Et harum quidem</option>
+              <option value="Temporibus autem">Temporibus autem</option>
+              <option value="Itaque earum rerum">Itaque earum rerum</option>
+            </select>
+          </div>
         </div>
       </div>
       <div class="main-form-input-box">
@@ -372,6 +383,6 @@
 </ul>
 
 </div>
-<script src="js/bundle.js"></script>
+<script src="js/bundle.min.js"></script>
 </body>
 </html>
