@@ -160,6 +160,10 @@ a {
     line-height: 22px;
     color: $input-text;
   }
+
+  .option {
+    width: 100%;
+  }
 }
 
 .select_ul{
@@ -340,6 +344,7 @@ a {
 
 .icon-text-block {
   @include flex-center-justify;
+  white-space: nowrap;
 }
 
 .icon-text-block__text {

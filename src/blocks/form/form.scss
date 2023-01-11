@@ -123,14 +123,11 @@
   text-transform: uppercase;
   transition: ease-out 0.5s;
   box-shadow: inset 0 0 0 0 $blue-btn;
+  white-space: nowrap;
 
   &:hover {
     box-shadow: inset 0 0 0 48px $blue-btn;
   }
-}
-
-.main-form-file__button-text {
-  flex: 0 0 auto;
 }
 
 .main-form-file__icon-wrapper {
