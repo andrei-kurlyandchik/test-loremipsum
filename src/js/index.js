@@ -103,10 +103,9 @@ if (devices.test(navigator.userAgent)) {
   $(`.desktop-device`).hide();
   $(`.mobile-device`).show();
 } else if ((navigator.userAgent.toLowerCase().match(`ipad`)) ||
-  (!(navigator.userAgent.toLowerCase().match(`iphone`)) && navigator.maxTouchPoints > 1)) {
+  (!(navigator.userAgent.toLowerCase().match(`iphone`)) && navigator.maxTouchPoints > 1) || isSafari) {
   $(`.desktop-device`).hide();
   $(`.mobile-device`).show();
-} else if (isSafari) {
   $(`.main`).addClass(`main_safari`);
 } else {
   $(`.desktop-device`).show();
