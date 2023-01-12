@@ -25,6 +25,10 @@
   background-size: cover;
   overflow: hidden;
   z-index: -1;
+
+  &.visible {
+    visibility: hidden;
+  }
 }
 
 .thumbnail {

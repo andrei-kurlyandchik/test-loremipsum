@@ -14,12 +14,13 @@ $(`.header__toggle-btn`).on(`click`, function () {
 
 
 // // Parallax
-// const parallax = document.getElementById(`parallax`);
-//
-// window.addEventListener(`scroll`, function () {
-//   let offset = window.pageYOffset;
-//   parallax.style.backgroundPositionY = offset * 0.7 + `px`;
-// });
+const elem = document.getElementById(`footer`);
+const parallax = document.getElementById(`parallax`);
+
+document.addEventListener(`scroll`, function () {
+  const posTop = elem.getBoundingClientRect().top;
+  parallax.classList.toggle(`visible`, posTop + elem.clientHeight <= window.innerHeight && posTop >= 0);
+});
 // // End Parallax
 
 
