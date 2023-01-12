@@ -97,15 +97,18 @@ $(`.select_ul li`).click(function () {
 
 // device check
 const devices = new RegExp(`Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini`, `i`);
-const isSafari = !!navigator.userAgent.match(/Version\/[\d\.]+.*Safari/);
+const mac = /(Mac)/i;
 
 if (devices.test(navigator.userAgent)) {
   $(`.desktop-device`).hide();
   $(`.mobile-device`).show();
 } else if ((navigator.userAgent.toLowerCase().match(`ipad`)) ||
-  (!(navigator.userAgent.toLowerCase().match(`iphone`)) && navigator.maxTouchPoints > 1) || isSafari) {
+  (!(navigator.userAgent.toLowerCase().match(`iphone`)) && navigator.maxTouchPoints > 1)) {
   $(`.desktop-device`).hide();
   $(`.mobile-device`).show();
+} else if (mac.test(navigator.platform)) {
+  $(`.desktop-device`).show();
+  $(`.mobile-device`).hide();
   $(`.main`).addClass(`main_safari`);
 } else {
   $(`.desktop-device`).show();
